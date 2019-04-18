@@ -44,7 +44,7 @@ def product_detail_view(request, pk = None, *args, **kwargs):
     if qs.count() == 1:
         instance = qs.first()
     else:
-        raise Http404("Esse produto não existe!")
+        raise Htgittp404("Esse produto não existe!")
     context = {
         'object': instance
     }
