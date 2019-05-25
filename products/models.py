@@ -1,4 +1,6 @@
 from django.db import models
+from .utils import unique_slug_generator
+from django.db.models.signals import pre_save
 
 #Custom queryset
 class ProductQuerySet(models.query.QuerySet):
